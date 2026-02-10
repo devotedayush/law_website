@@ -1,0 +1,49 @@
+import React from 'react';
+import { Instagram, Facebook, Linkedin } from 'lucide-react';
+
+const Footer = () => (
+    <footer className="bg-black text-white relative overflow-hidden pt-20 pb-10 px-6 md:px-12 lg:px-20 font-sans">
+        {/* Main Content */}
+        <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 mb-32">
+            {/* Left Column */}
+            <div className="max-w-md">
+                <h2 className="text-5xl font-bold mb-6 tracking-tight">Cyinov</h2>
+                <p className="text-neutral-400 text-sm leading-relaxed max-w-xs">
+                    At <strong className="text-white">Cyinov Consulting</strong>, we combine Hard Law with Creative Strategy to simplify solutions and amplify your success.
+                </p>
+                <div className="mt-6 text-neutral-400 text-sm space-y-1">
+                    <p>info@cyinov.com</p>
+                    <p>+91-8800203969</p>
+                </div>
+            </div>
+
+            {/* Right Column - Navigation */}
+            <div className="flex flex-col gap-3 text-2xl font-medium text-left md:text-right w-full md:w-auto">
+                {['Home', 'Services', 'Our Team', 'Testimonials', 'Contact'].map((item) => (
+                    <a key={item} href="#" className="hover:text-neutral-300 transition-colors block">
+                        {item}
+                    </a>
+                ))}
+            </div>
+        </div>
+
+        {/* Big Watermark */}
+        <div className="absolute bottom-[-5%] left-0 w-full overflow-hidden leading-none select-none pointer-events-none">
+            <h1 className="text-[18vw] font-bold text-neutral-800/40 text-center tracking-tighter whitespace-nowrap">
+                Cyinov
+            </h1>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-end border-t border-neutral-800 pt-8 gap-4">
+            <p className="text-xs text-neutral-500">©2025 Cyinov Consulting</p>
+            <div className="flex gap-6">
+                <Instagram size={20} className="text-white hover:text-neutral-300 cursor-pointer" />
+                <Facebook size={20} className="text-white hover:text-neutral-300 cursor-pointer" />
+                <Linkedin size={20} className="text-white hover:text-neutral-300 cursor-pointer" />
+            </div>
+        </div>
+    </footer>
+);
+
+export default Footer;
