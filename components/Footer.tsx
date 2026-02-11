@@ -19,9 +19,17 @@ const Footer = () => (
 
             {/* Right Column - Navigation */}
             <div className="flex flex-col gap-3 text-2xl font-medium text-left md:text-right w-full md:w-auto">
-                {['Home', 'Services', 'Our Team', 'Testimonials', 'Contact'].map((item) => (
-                    <a key={item} href="#" className="hover:text-neutral-300 transition-colors block">
-                        {item}
+                {[
+                    { label: 'Home', href: '/' },
+                    { label: 'About', href: '/about' },
+                    { label: 'Services', href: '/services' },
+                    { label: 'Solutions', href: '/solutions' },
+                    { label: 'Our Team', href: '/team' },
+                    { label: 'Testimonials', href: '#testimonials' },
+                    { label: 'Contact', href: '/contact' },
+                ].map((item) => (
+                    <a key={item.label} href={item.href} className="hover:text-neutral-300 transition-colors block">
+                        {item.label}
                     </a>
                 ))}
             </div>

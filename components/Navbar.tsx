@@ -11,9 +11,11 @@ const Navbar = () => {
 
             <div className={styles.navLinks}>
                 <Link href="/" className={styles.link}>Home</Link>
-                <Link href="#services" className={styles.link}>Services</Link>
+                <Link href="/about" className={styles.link}>About</Link>
+                <Link href="/services" className={styles.link}>Services</Link>
+                <Link href="/solutions" className={styles.link}>Solutions</Link>
                 <Link href="/team" className={styles.link}>Our Team</Link>
-                <Link href="#contact" className={styles.link}>Contact</Link>
+                <Link href="/contact" className={styles.link}>Contact</Link>
             </div>
 
             <button className={styles.signInButton}>

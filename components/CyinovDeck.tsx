@@ -33,27 +33,27 @@ const icons: Record<string, React.ReactNode> = {
     ),
 };
 
-const DeckCard = ({ number, title, description, icon }: { number: string, title: string, description: string, icon: React.ReactNode }) => (
-    <div className="group relative bg-neutral-900 rounded-2xl w-[260px] md:w-[280px] shrink-0 snap-center transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+const DeckCard = ({ number, title, description, icon, slug }: { number: string, title: string, description: string, icon: React.ReactNode, slug: string }) => (
+    <div className="group relative bg-[#C5D5E8] rounded-2xl w-[260px] md:w-[280px] shrink-0 snap-center transition-all duration-300 hover:-translate-y-1 overflow-hidden">
         <div className="p-6">
             <div className="flex items-center justify-between mb-5">
-                <div className="w-10 h-10 rounded-xl bg-white/[0.06] flex items-center justify-center text-neutral-400 group-hover:text-white group-hover:bg-white/10 transition-all duration-300">
+                <div className="w-10 h-10 rounded-xl bg-white/40 flex items-center justify-center text-[#4A6FA5] group-hover:text-[#3B5D8A] group-hover:bg-white/60 transition-all duration-300">
                     {icon}
                 </div>
-                <span className="text-[0.65rem] font-semibold tracking-[0.2em] uppercase text-neutral-600">{number}</span>
+                <span className="text-[0.65rem] font-semibold tracking-[0.2em] uppercase text-neutral-500/60">{number}</span>
             </div>
-            <h3 className="text-base font-semibold text-white mb-2 font-sans leading-snug">
+            <h3 className="text-base font-semibold text-neutral-900 mb-2 font-sans leading-snug">
                 {title}
             </h3>
-            <p className="text-neutral-400 text-[0.78rem] leading-relaxed font-sans line-clamp-3">
+            <p className="text-neutral-700 text-[0.78rem] leading-relaxed font-sans line-clamp-3">
                 {description}
             </p>
         </div>
-        <div className="h-px mx-6 bg-neutral-800 group-hover:bg-neutral-600 transition-colors duration-300" />
+        <div className="h-px mx-6 bg-neutral-400/30 group-hover:bg-neutral-400/50 transition-colors duration-300" />
         <div className="px-6 py-4">
-            <span className="text-[0.7rem] font-medium text-neutral-500 group-hover:text-[#4A6FA5] transition-colors duration-300 cursor-pointer">
+            <a href={`/solutions#${slug}`} className="text-[0.7rem] font-medium text-[#4A6FA5] group-hover:text-[#3B5D8A] transition-colors duration-300">
                 Learn more &rarr;
-            </span>
+            </a>
         </div>
     </div>
 );
@@ -62,42 +62,52 @@ const CyinovDeck = () => {
     const items = [
         {
             title: "Brand Fortress",
+            slug: "brand-fortress",
             description: "We don't just file forms; we build moats around your business. From trademark registration to objection handling, we ensure your name, logo, and slogan become untouchable assets."
         },
         {
             title: "Fashion Law",
+            slug: "fashion-law",
             description: "Specialized vertical for designers and retail brands. We protect your sketches, patterns, and collections from knock-offs using Design Act registrations and aggressive copyright strategies."
         },
         {
             title: "Creator Economy",
+            slug: "creator-economy",
             description: "For agencies and influencers. We audit brand collaboration contracts, ensure ASCI compliance, and protect your digital content rights so you truly own what you create."
         },
         {
             title: "Market Intelligence",
+            slug: "market-intelligence",
             description: "Data before decisions. We provide deep-dive market research reports and competitor benchmarking so you know exactly where to strike before launching a new product."
         },
         {
             title: "Corporate Tax",
+            slug: "corporate-tax",
             description: "Moving beyond \"filing returns.\" We design tax structures that minimize liability and maximize efficiency, ensuring you keep more of what you earn while staying 100% compliant."
         },
         {
             title: "Startup Launchpad",
+            slug: "startup-launchpad",
             description: "From \"Idea\" to \"Incorporation.\" We handle entity formation (Pvt. Ltd., LLP), founder agreements, and equity splitting—setting the foundation right so it doesn't crack later."
         },
         {
             title: "HR & Talent",
+            slug: "hr-talent",
             description: "People are your engine. We draft employment contracts, NDAs, and ESOP pools that retain top talent and protect company secrets from walking out the door."
         },
         {
             title: "Regulatory Health",
+            slug: "regulatory-health",
             description: "A proactive audit of your business. We scan your operations for legal and statutory gaps (Labour Laws, GDPR, Companies Act) and fix them before the notice arrives."
         },
         {
             title: "Contract Lifecycle",
+            slug: "contract-lifecycle",
             description: "We draft, vet, and negotiate your high-stakes deals—vendor agreements, licensing deals, and franchise contracts—ensuring there are no trapdoors in the fine print."
         },
         {
             title: "Litigation Strategy",
+            slug: "litigation-strategy",
             description: "When peace talks fail. As IPR specialists, we provide strategic counsel on infringement suits, cease & desist notices, and settlement negotiations to resolve conflicts swiftly."
         }
     ];
@@ -128,6 +138,7 @@ const CyinovDeck = () => {
                                     title={item.title}
                                     description={item.description}
                                     icon={icons[item.title]}
+                                    slug={item.slug}
                                 />
                             ))}
                         </div>

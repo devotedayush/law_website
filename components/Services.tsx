@@ -42,7 +42,7 @@ const AccordionItem = ({ index, title, description, icon: Icon, isOpen, onToggle
             <span className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 w-8 shrink-0">
                 0{index + 1}
             </span>
-            <div className="w-11 h-11 rounded-xl bg-neutral-800 flex items-center justify-center text-neutral-300 group-hover:text-white group-hover:bg-neutral-700 transition-all duration-300 shrink-0">
+            <div className="w-11 h-11 rounded-xl bg-[#C5D5E8]/30 flex items-center justify-center text-[#4A6FA5] group-hover:bg-[#C5D5E8]/50 transition-all duration-300 shrink-0">
                 <Icon strokeWidth={1.5} size={22} />
             </div>
             <h3 className="text-lg md:text-xl font-semibold text-neutral-900 font-sans flex-1">
@@ -97,7 +97,7 @@ const Services = () => {
                                 The 4-Pillar <br />
                                 Shield
                             </h2>
-                            <button className="bg-[#2C2C2C] text-white px-6 py-3 rounded text-sm font-medium hover:bg-[#4A6FA5] transition-colors duration-200">
+                            <button className="bg-[#4A6FA5] text-white px-6 py-3 rounded text-sm font-medium hover:bg-[#3B5D8A] transition-colors duration-200">
                                 Schedule Meet
                             </button>
                         </div>
