@@ -1,13 +1,13 @@
 import React from 'react';
 
 const DeckCard = ({ number, title, description }: { number: string, title: string, description: string }) => (
-    <div className="bg-white border border-neutral-200 p-8 rounded-lg min-w-[300px] md:min-w-[350px] flex-shrink-0 flex flex-col justify-between h-[300px] snap-center">
-        <div>
-            <span className="text-4xl font-light text-neutral-300 mb-4 block">{number}</span>
-            <h3 className="text-xl font-semibold text-neutral-900 mb-3 font-sans">
+    <div className="bg-white border border-neutral-200 p-6 rounded-xl min-w-[280px] md:min-w-[320px] flex-shrink-0 flex flex-col h-[280px] snap-center hover:shadow-md transition-shadow duration-300">
+        <div className="flex flex-col h-full">
+            <span className="text-3xl font-light text-neutral-300 mb-4 block">{number}</span>
+            <h3 className="text-lg font-semibold text-neutral-900 mb-3 font-sans">
                 {title}
             </h3>
-            <p className="text-neutral-600 text-sm leading-relaxed font-sans">
+            <p className="text-neutral-500 text-xs leading-relaxed font-sans overflow-hidden">
                 {description}
             </p>
         </div>
@@ -59,23 +59,34 @@ const CyinovDeck = () => {
     ];
 
     return (
-        <section className="bg-[#FAF9F6] p-6 md:p-12 lg:p-20 border-t border-neutral-200">
-            <div className="max-w-7xl w-full mx-auto">
-                <div className="mb-12 text-center md:text-left">
-                    <h2 className="text-3xl md:text-4xl font-medium tracking-tight text-neutral-900">
-                        THE CYINOV DECK
-                    </h2>
-                </div>
-                
-                <div className="flex overflow-x-auto pb-8 -mx-6 px-6 md:mx-0 md:px-0 gap-6 scrollbar-hide snap-x">
-                    {items.map((item, index) => (
-                        <DeckCard
-                            key={index}
-                            number={`${index + 1}.`}
-                            title={item.title}
-                            description={item.description}
-                        />
-                    ))}
+        <section className="bg-[#FAF9F6] p-6 md:p-12 lg:p-20 flex items-center justify-center border-t border-neutral-200">
+            <div className="max-w-7xl w-full">
+                <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
+                    <div className="lg:w-1/6 pt-2">
+                        <span className="uppercase tracking-widest text-xs font-bold text-neutral-800/60 block mb-2">
+                            Our
+                        </span>
+                        <span className="uppercase tracking-widest text-xs font-bold text-neutral-800/60 block">
+                            Services
+                        </span>
+                    </div>
+                    <div className="lg:w-5/6">
+                        <div className="mb-16">
+                            <h2 className="text-4xl md:text-5xl font-medium tracking-tight text-neutral-900 leading-[1.1]">
+                                The Cyinov Deck
+                            </h2>
+                        </div>
+                        <div className="flex overflow-x-auto pb-8 -mx-6 px-6 md:mx-0 md:px-0 gap-6 scrollbar-hide snap-x">
+                            {items.map((item, index) => (
+                                <DeckCard
+                                    key={index}
+                                    number={`${index + 1}.`}
+                                    title={item.title}
+                                    description={item.description}
+                                />
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

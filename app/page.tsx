@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import Mission from "@/components/Mission";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
-import Attorneys from "@/components/Attorneys";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import CyinovDeck from "@/components/CyinovDeck";
@@ -30,7 +29,6 @@ export default function Home() {
       <CyinovDeck />
       <Testimonials />
       <ClientMarquee />
-      <Attorneys />
       <Footer />
     </main>
   );
