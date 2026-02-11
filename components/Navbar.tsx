@@ -1,11 +1,12 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
     return (
         <nav className={styles.navbar}>
             <div className={styles.logo}>
-                Cyinov
+                <Image src="/images/cyinovlogo.svg" alt="Cyinov" width={120} height={40} priority />
             </div>
 
             <div className={styles.navLinks}>

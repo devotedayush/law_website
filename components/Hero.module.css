@@ -47,7 +47,7 @@
 
 .ctaButton:hover {
     transform: translateY(-2px);
-    opacity: 0.9;
+    background-color: #4A6FA5;
 }
 
 @media (max-width: 768px) {

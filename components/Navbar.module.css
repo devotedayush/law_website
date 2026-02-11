@@ -50,7 +50,8 @@
 }
 
 .signInButton:hover {
-    background-color: #E0DFD8;
+    background-color: #4A6FA5;
+    color: #fff;
 }
 
 @media (max-width: 768px) {

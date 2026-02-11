@@ -43,7 +43,7 @@ const Attorneys = () => {
         {
             name: "Anuj Kaushik",
             role: "Head - Tax Advisory",
-            image: "/images/anuj_kaushik.png"
+            image: "/images/anuj_kaushik.jpeg"
         },
         {
             name: "Rajeev Kaushik",

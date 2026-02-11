@@ -7,12 +7,12 @@ const Footer = () => (
         <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 mb-32">
             {/* Left Column */}
             <div className="max-w-md">
-                <h2 className="text-5xl font-bold mb-6 tracking-tight">Cyinov</h2>
+                <img src="/images/cyinovlogo.svg" alt="Cyinov" className="h-10 mb-6 brightness-0 invert" />
                 <p className="text-neutral-400 text-sm leading-relaxed max-w-xs">
                     At <strong className="text-white">Cyinov Consulting</strong>, we combine Hard Law with Creative Strategy to simplify solutions and amplify your success.
                 </p>
                 <div className="mt-6 text-neutral-400 text-sm space-y-1">
-                    <p>info@cyinov.com</p>
+                    <p className="text-[#4A6FA5]">info@cyinov.com</p>
                     <p>+91-8800203969</p>
                 </div>
             </div>
@@ -38,9 +38,9 @@ const Footer = () => (
         <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-end border-t border-neutral-800 pt-8 gap-4">
             <p className="text-xs text-neutral-500">©2025 Cyinov Consulting</p>
             <div className="flex gap-6">
-                <Instagram size={20} className="text-white hover:text-neutral-300 cursor-pointer" />
-                <Facebook size={20} className="text-white hover:text-neutral-300 cursor-pointer" />
-                <Linkedin size={20} className="text-white hover:text-neutral-300 cursor-pointer" />
+                <Instagram size={20} className="text-white hover:text-[#4A6FA5] cursor-pointer transition-colors duration-200" />
+                <Facebook size={20} className="text-white hover:text-[#4A6FA5] cursor-pointer transition-colors duration-200" />
+                <Linkedin size={20} className="text-white hover:text-[#4A6FA5] cursor-pointer transition-colors duration-200" />
             </div>
         </div>
     </footer>
