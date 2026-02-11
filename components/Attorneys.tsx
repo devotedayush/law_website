@@ -68,14 +68,15 @@ const Attorneys = () => {
                         </div>
 
                         {/* Attorneys Grid */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div className="flex overflow-x-auto pb-8 -mx-6 px-6 md:mx-0 md:px-0 md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 scrollbar-hide snap-x">
                             {attorneys.map((attorney, index) => (
-                                <AttorneyCard
-                                    key={index}
-                                    name={attorney.name}
-                                    role={attorney.role}
-                                    image={attorney.image}
-                                />
+                                <div key={index} className="min-w-[280px] md:min-w-full snap-center">
+                                    <AttorneyCard
+                                        name={attorney.name}
+                                        role={attorney.role}
+                                        image={attorney.image}
+                                    />
+                                </div>
                             ))}
                         </div>
 
