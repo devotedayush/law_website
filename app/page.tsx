@@ -6,6 +6,8 @@ import Testimonials from "@/components/Testimonials";
 import Attorneys from "@/components/Attorneys";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import CyinovDeck from "@/components/CyinovDeck";
+import ClientMarquee from "@/components/ClientMarquee";
 
 export default function Home() {
   return (
@@ -23,9 +25,11 @@ export default function Home() {
           />
         </div>
       </div>
-      <Mission />
       <Services />
+      <Mission />
+      <CyinovDeck />
       <Testimonials />
+      <ClientMarquee />
       <Attorneys />
       <Footer />
     </main>
