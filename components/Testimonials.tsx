@@ -53,15 +53,16 @@ const Testimonials = () => {
                                 What Our Clients Are Saying
                             </h2>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="flex overflow-x-auto pb-8 -mx-6 px-6 md:mx-0 md:px-0 md:grid md:grid-cols-2 gap-6 scrollbar-hide snap-x">
                             {testimonials.map((testimonial, index) => (
-                                <TestimonialCard
-                                    key={index}
-                                    quote={testimonial.quote}
-                                    author={testimonial.author}
-                                    role={testimonial.role}
-                                    image={testimonial.image}
-                                />
+                                <div key={index} className="min-w-[300px] md:min-w-full snap-center">
+                                    <TestimonialCard
+                                        quote={testimonial.quote}
+                                        author={testimonial.author}
+                                        role={testimonial.role}
+                                        image={testimonial.image}
+                                    />
+                                </div>
                             ))}
                         </div>
                     </div>
