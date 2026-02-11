@@ -18,7 +18,7 @@ export default function Home() {
             src="/images/group of people.jpeg"
             alt="Group of people"
             fill
-            className="object-cover"
+            className="object-cover object-left"
             priority
           />
         </div>
