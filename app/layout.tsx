@@ -13,7 +13,7 @@ const inter = Inter({
   variable: "--font-inter",
   display: "swap",
 });
-
+ 
 export const metadata: Metadata = {
   title: "Cyinov Consulting",
   description: "Simplified Solutions, Amplified Success. Legal Compliance, Tax Advisory, Market Research & Human Capital consulting.",
