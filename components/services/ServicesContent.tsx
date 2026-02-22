@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useState, useRef, useCallback } from 'react';
+import React, { useState, useRef, useCallback, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import ServicesNav from './ServicesNav';
 import ServiceSection from './ServiceSection';
 import { legalServices, taxServices, researchServices, hcmServices } from './servicesData';
@@ -8,12 +9,18 @@ import { legalServices, taxServices, researchServices, hcmServices } from './ser
 const categories = [
     { data: legalServices, bgClass: 'bg-[#F3F2ED]' },
     { data: taxServices, bgClass: 'bg-[#FAF9F6]' },
-    { data: researchServices, bgClass: 'bg-[#C5D5E8]' },
+    { data: researchServices, bgClass: 'bg-[#FAF9F6]' },
     { data: hcmServices, bgClass: 'bg-[#F3F2ED]' },
 ];
 
+const validIds = categories.map((c) => c.data.id);
+
 const ServicesContent = () => {
-    const [activeId, setActiveId] = useState('legal');
+    const searchParams = useSearchParams();
+    const initialId = searchParams.get('s');
+    const [activeId, setActiveId] = useState(
+        initialId && validIds.includes(initialId) ? initialId : 'legal'
+    );
     const wrapperRef = useRef<HTMLDivElement>(null);
 
     const handleSelect = useCallback((id: string) => {

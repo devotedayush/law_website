@@ -11,6 +11,7 @@ const navItems = [
     { label: 'Services', href: '/services' },
     { label: 'Solutions', href: '/solutions' },
     { label: 'Our Team', href: '/team' },
+    { label: 'FAQ', href: '/faq' },
     { label: 'Contact', href: '/contact' },
 ];
 

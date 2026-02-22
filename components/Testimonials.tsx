@@ -1,20 +1,13 @@
 import React from 'react';
 
-const TestimonialCard = ({ quote, author, role, image }: { quote: string, author: string, role: string, image: string }) => (
-    <div className="bg-white/20 backdrop-blur-sm border border-white/30 p-8 rounded-lg h-full flex flex-col justify-between">
-        <p className="text-neutral-800 italic text-lg leading-relaxed mb-8 font-sans">
-            "{quote}"
+const TestimonialCard = ({ quote, author, role }: { quote: string; author: string; role: string }) => (
+    <div className="bg-[#FAF9F6] border-l-4 border-neutral-400 p-8 h-full flex flex-col justify-between">
+        <p className="text-neutral-800 text-base leading-relaxed mb-8 font-serif">
+            {quote}
         </p>
-        <div className="flex items-center gap-4">
-            <img
-                src={image}
-                alt={author}
-                className="w-12 h-12 rounded-full object-cover bg-neutral-300"
-            />
-            <div>
-                <h4 className="font-semibold text-neutral-900 text-sm">{author}</h4>
-                <p className="text-neutral-700 text-xs">{role}</p>
-            </div>
+        <div>
+            <p className="font-semibold text-neutral-900 text-sm uppercase tracking-wide">- {author}</p>
+            <p className="text-neutral-600 text-xs uppercase tracking-wide ml-3">{role}</p>
         </div>
     </div>
 );
@@ -22,17 +15,20 @@ const TestimonialCard = ({ quote, author, role, image }: { quote: string, author
 const Testimonials = () => {
     const testimonials = [
         {
-            quote: "Cyinov transformed how we handle compliance. Their no-jargon approach made complex trademark filings and tax structuring feel effortless. They didn't just file paperwork — they built a brand fortress around our business.",
-            author: "David L. Williams",
-            role: "CEO, Williams Technologies",
-            image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+            quote: "I have been associated with Vidhigyah Law Offices for several years and have consistently found the team to be exceptionally dedicated and enthusiastic professionals. They have advised me on drafting and reviewing Terms & Conditions, Privacy Policies, Non-Disclosure Agreements, and various other documents related to my IT projects. I wish them every success and would gladly recommend Vidhigyah Law Offices for legal services in the areas of Cyber Law and Intellectual Property Rights.",
+            author: "Puneet Hasija",
+            role: "Cloud Software Architect",
         },
         {
-            quote: "From market research to regulatory audits, Cyinov was our single point of contact for everything. Their team mapped the terrain before we expanded, and their proactive tax advisory saved us from costly mistakes. Truly a one-stop consulting partner.",
-            author: "Charles M. Green",
-            role: "Founder, Green & Associates",
-            image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
-        }
+            quote: "Vidhigyah Law Offices has been instrumental in assisting us with real estate matters, particularly in navigating complex issues under the Real Estate (Regulation and Development) Act (RERA). The team\u2019s strong understanding of real estate law and RERA compliances made a tangible difference, and we highly recommend Vidhigyah Law Offices for real estate and RERA-related legal services.",
+            author: "Ankur, Director",
+            role: "MNC Infra Capitals",
+        },
+        {
+            quote: "Vidhigyah Law Offices has been a reliable legal partner, assisting us effectively with vendor agreements and intellectual property rights. Their advice is clear, decisive, and client-focused, making complex legal issues easy to navigate. We highly recommend Vidhigyah Law Offices for their professionalism and expertise.",
+            author: "Nitin Bhardwaj, Co-Founder",
+            role: "Radiohead Brands",
+        },
     ];
 
     return (
@@ -48,19 +44,19 @@ const Testimonials = () => {
                         </span>
                     </div>
                     <div className="lg:w-5/6">
-                        <div className="mb-16">
-                            <h2 className="text-4xl md:text-5xl font-medium tracking-tight text-neutral-900 leading-[1.1]">
-                                What Our Clients Are Saying
+                        <div className="mb-4">
+                            <h2 className="text-4xl md:text-5xl font-medium tracking-tight text-neutral-900 leading-[1.1] font-serif">
+                                Testimonials
                             </h2>
                         </div>
-                        <div className="flex overflow-x-auto pb-8 -mx-6 px-6 md:mx-0 md:px-0 md:grid md:grid-cols-2 gap-6 scrollbar-hide snap-x">
+                        <p className="text-neutral-700 text-base mb-12 font-serif">what our clients say about us.......</p>
+                        <div className="flex overflow-x-auto pb-8 -mx-6 px-6 md:mx-0 md:px-0 md:grid md:grid-cols-3 gap-6 scrollbar-hide snap-x">
                             {testimonials.map((testimonial, index) => (
-                                <div key={index} className="min-w-[300px] md:min-w-full snap-center">
+                                <div key={index} className="min-w-[300px] md:min-w-0 snap-center">
                                     <TestimonialCard
                                         quote={testimonial.quote}
                                         author={testimonial.author}
                                         role={testimonial.role}
-                                        image={testimonial.image}
                                     />
                                 </div>
                             ))}

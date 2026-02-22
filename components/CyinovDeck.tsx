@@ -61,6 +61,16 @@ const DeckCard = ({ number, title, description, icon, slug }: { number: string, 
 const CyinovDeck = () => {
     const items = [
         {
+            title: "Contract Lifecycle",
+            slug: "contract-lifecycle",
+            description: "We draft, vet, and negotiate your high-stakes deals—vendor agreements, licensing deals, and franchise contracts—ensuring there are no trapdoors in the fine print."
+        },
+        {
+            title: "Litigation Strategy",
+            slug: "litigation-strategy",
+            description: "When peace talks fail. As IPR specialists, we provide strategic counsel on infringement suits, cease & desist notices, and settlement negotiations to resolve conflicts swiftly."
+        },
+        {
             title: "Brand Fortress",
             slug: "brand-fortress",
             description: "We don't just file forms; we build moats around your business. From trademark registration to objection handling, we ensure your name, logo, and slogan become untouchable assets."
@@ -99,16 +109,6 @@ const CyinovDeck = () => {
             title: "Regulatory Health",
             slug: "regulatory-health",
             description: "A proactive audit of your business. We scan your operations for legal and statutory gaps (Labour Laws, GDPR, Companies Act) and fix them before the notice arrives."
-        },
-        {
-            title: "Contract Lifecycle",
-            slug: "contract-lifecycle",
-            description: "We draft, vet, and negotiate your high-stakes deals—vendor agreements, licensing deals, and franchise contracts—ensuring there are no trapdoors in the fine print."
-        },
-        {
-            title: "Litigation Strategy",
-            slug: "litigation-strategy",
-            description: "When peace talks fail. As IPR specialists, we provide strategic counsel on infringement suits, cease & desist notices, and settlement negotiations to resolve conflicts swiftly."
         }
     ];
 

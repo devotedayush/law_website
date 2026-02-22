@@ -1,84 +1,65 @@
-'use client';
-
-import React, { useState } from 'react';
+import React from 'react';
 import { Shield, BarChart3, Scale, Users } from 'lucide-react';
 
 const services = [
     {
         title: "Legal Compliance",
         description: "From IPR & trademarks to regulatory health checks, we build brand fortresses and keep your operations audit-ready.",
-        icon: Shield
+        icon: Shield,
+        href: "/services?s=legal",
     },
     {
         title: "Tax Advisory",
         description: "Proactive tax structuring that minimizes liability and maximizes efficiency, ensuring you stay 100% compliant.",
-        icon: Scale
+        icon: Scale,
+        href: "/services?s=tax",
     },
     {
         title: "Market Research",
         description: "Deep-dive market research, competitor benchmarking, and data-driven insights so you know exactly where to strike.",
-        icon: BarChart3
+        icon: BarChart3,
+        href: "/services?s=research",
     },
     {
         title: "Human Capital",
         description: "Employment contracts, HR policies, and talent strategies that protect the company and empower the people.",
-        icon: Users
+        icon: Users,
+        href: "/services?s=hcm",
     }
 ];
 
-const AccordionItem = ({ index, title, description, icon: Icon, isOpen, onToggle }: {
+const PillarCard = ({ index, title, description, icon: Icon, href }: {
     index: number;
     title: string;
     description: string;
     icon: any;
-    isOpen: boolean;
-    onToggle: () => void;
+    href: string;
 }) => (
-    <div className="border-b border-neutral-300 last:border-b-0">
-        <button
-            onClick={onToggle}
-            className="w-full flex items-center gap-5 py-6 md:py-8 text-left cursor-pointer group"
-        >
-            <span className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 w-8 shrink-0">
-                0{index + 1}
-            </span>
-            <div className="w-11 h-11 rounded-xl bg-[#C5D5E8]/30 flex items-center justify-center text-[#4A6FA5] group-hover:bg-[#C5D5E8]/50 transition-all duration-300 shrink-0">
-                <Icon strokeWidth={1.5} size={22} />
+    <div className="group relative bg-[#C5D5E8] rounded-2xl w-[260px] md:w-[280px] shrink-0 snap-center transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+        <div className="p-6">
+            <div className="flex items-center justify-between mb-5">
+                <div className="w-10 h-10 rounded-xl bg-white/40 flex items-center justify-center text-[#4A6FA5] group-hover:text-[#3B5D8A] group-hover:bg-white/60 transition-all duration-300">
+                    <Icon strokeWidth={1.5} size={22} />
+                </div>
+                <span className="text-[0.65rem] font-semibold tracking-[0.2em] uppercase text-neutral-500/60">{`${index + 1}.`}</span>
             </div>
-            <h3 className="text-lg md:text-xl font-semibold text-neutral-900 font-sans flex-1">
+            <h3 className="text-base font-semibold text-neutral-900 mb-2 font-sans leading-snug">
                 {title}
             </h3>
-            <div className={`w-8 h-8 rounded-full border border-neutral-300 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:border-neutral-500 ${isOpen ? 'bg-[#4A6FA5] border-[#4A6FA5]' : ''}`}>
-                <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    className={`transition-transform duration-300 ${isOpen ? 'rotate-45' : ''}`}
-                >
-                    <line x1="7" y1="1" x2="7" y2="13" stroke={isOpen ? 'white' : 'currentColor'} strokeWidth="1.5" strokeLinecap="round" />
-                    <line x1="1" y1="7" x2="13" y2="7" stroke={isOpen ? 'white' : 'currentColor'} strokeWidth="1.5" strokeLinecap="round" />
-                </svg>
-            </div>
-        </button>
-        <div
-            className="grid transition-all duration-300 ease-in-out"
-            style={{ gridTemplateRows: isOpen ? '1fr' : '0fr' }}
-        >
-            <div className="overflow-hidden">
-                <div className="pl-[3.25rem] md:pl-[3.75rem] pb-8 pr-10">
-                    <p className="text-neutral-600 text-sm md:text-base leading-relaxed font-sans max-w-xl">
-                        {description}
-                    </p>
-                </div>
-            </div>
+            <p className="text-neutral-700 text-[0.78rem] leading-relaxed font-sans line-clamp-3">
+                {description}
+            </p>
+        </div>
+        <div className="h-px mx-6 bg-neutral-400/30 group-hover:bg-neutral-400/50 transition-colors duration-300" />
+        <div className="px-6 py-4">
+            <a href={href} className="text-[0.7rem] font-medium text-[#4A6FA5] group-hover:text-[#3B5D8A] transition-colors duration-300">
+                Learn more &rarr;
+            </a>
         </div>
     </div>
 );
 
 const Services = () => {
-    const [openIndex, setOpenIndex] = useState<number | null>(0);
-
     return (
         <section className="bg-[#F3F2ED] p-6 md:p-12 lg:p-20 flex items-center justify-center">
             <div className="max-w-7xl w-full">
@@ -101,16 +82,15 @@ const Services = () => {
                                 Schedule Meet
                             </button>
                         </div>
-                        <div className="border-t border-neutral-300">
+                        <div className="flex overflow-x-auto pb-8 -mx-6 px-6 md:mx-0 md:px-0 gap-6 scrollbar-hide snap-x">
                             {services.map((service, index) => (
-                                <AccordionItem
+                                <PillarCard
                                     key={index}
                                     index={index}
                                     title={service.title}
                                     description={service.description}
                                     icon={service.icon}
-                                    isOpen={openIndex === index}
-                                    onToggle={() => setOpenIndex(openIndex === index ? null : index)}
+                                    href={service.href}
                                 />
                             ))}
                         </div>

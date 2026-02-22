@@ -9,7 +9,7 @@ const Hero = () => {
             </h1>
 
             <p className={styles.subtitle}>
-                We combine Hard Law with Creative Strategy to turn your business protection into your strongest asset
+                Empowering businesses with innovative solutions and strategic excellence
             </p>
 
             <button className={styles.ctaButton}>

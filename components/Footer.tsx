@@ -9,7 +9,7 @@ const Footer = () => (
             <div className="max-w-md">
                 <img src="/images/cyinovlogo.svg" alt="Cyinov" className="h-10 mb-6 brightness-0 invert" />
                 <p className="text-neutral-400 text-sm leading-relaxed max-w-xs">
-                    At <strong className="text-white">Cyinov Consulting</strong>, we combine Hard Law with Creative Strategy to simplify solutions and amplify your success.
+                    At <strong className="text-white">Cyinov Consulting</strong>, Empowering businesses with innovative solutions and strategic excellence.
                 </p>
                 <div className="mt-6 text-neutral-400 text-sm space-y-1">
                     <p className="text-[#4A6FA5]">info@cyinov.com</p>
@@ -25,6 +25,7 @@ const Footer = () => (
                     { label: 'Services', href: '/services' },
                     { label: 'Solutions', href: '/solutions' },
                     { label: 'Our Team', href: '/team' },
+                    { label: 'FAQ', href: '/faq' },
                     { label: 'Testimonials', href: '#testimonials' },
                     { label: 'Contact', href: '/contact' },
                 ].map((item) => (
