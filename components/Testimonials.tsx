@@ -15,17 +15,17 @@ const TestimonialCard = ({ quote, author, role }: { quote: string; author: strin
 const Testimonials = () => {
     const testimonials = [
         {
-            quote: "I have been associated with Vidhigyah Law Offices for several years and have consistently found the team to be exceptionally dedicated and enthusiastic professionals. They have advised me on drafting and reviewing Terms & Conditions, Privacy Policies, Non-Disclosure Agreements, and various other documents related to my IT projects. I wish them every success and would gladly recommend Vidhigyah Law Offices for legal services in the areas of Cyber Law and Intellectual Property Rights.",
+            quote: "I have been associated with Cyinov Consulting for several years and have consistently found the team to be exceptionally dedicated and enthusiastic professionals. They have advised me on drafting and reviewing Terms & Conditions, Privacy Policies, Non-Disclosure Agreements, and various other documents related to my IT projects. I wish them every success and would gladly recommend Cyinov Consulting for legal services in the areas of Cyber Law and Intellectual Property Rights.",
             author: "Puneet Hasija",
             role: "Cloud Software Architect",
         },
         {
-            quote: "Vidhigyah Law Offices has been instrumental in assisting us with real estate matters, particularly in navigating complex issues under the Real Estate (Regulation and Development) Act (RERA). The team\u2019s strong understanding of real estate law and RERA compliances made a tangible difference, and we highly recommend Vidhigyah Law Offices for real estate and RERA-related legal services.",
+            quote: "Cyinov Consulting has been instrumental in assisting us with real estate matters, particularly in navigating complex issues under the Real Estate (Regulation and Development) Act (RERA). The team\u2019s strong understanding of real estate law and RERA compliances made a tangible difference, and we highly recommend Cyinov Consulting for real estate and RERA-related legal services.",
             author: "Ankur, Director",
             role: "MNC Infra Capitals",
         },
         {
-            quote: "Vidhigyah Law Offices has been a reliable legal partner, assisting us effectively with vendor agreements and intellectual property rights. Their advice is clear, decisive, and client-focused, making complex legal issues easy to navigate. We highly recommend Vidhigyah Law Offices for their professionalism and expertise.",
+            quote: "Cyinov Consulting has been a reliable legal partner, assisting us effectively with vendor agreements and intellectual property rights. Their advice is clear, decisive, and client-focused, making complex legal issues easy to navigate. We highly recommend Cyinov Consulting for their professionalism and expertise.",
             author: "Nitin Bhardwaj, Co-Founder",
             role: "Radiohead Brands",
         },
