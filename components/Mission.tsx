@@ -23,7 +23,7 @@ const Mission = () => {
                     </div>
                     <div className="lg:w-5/6">
                         <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-white mb-8 leading-tight">
-                            Where Hard Law Meets Creative Strategy
+                            Transforming Business Landscapes Through Strategic Excellence
                         </h1>
                         <p className="text-lg md:text-xl text-neutral-100 max-w-2xl leading-relaxed font-light">
                             To revolutionize business consulting by providing integrated, technology-driven solutions that enable organizations to thrive in a rapidly evolving business landscape while maintaining the highest standards of compliance and operational excellence.

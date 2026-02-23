@@ -21,9 +21,9 @@ const Navbar = () => {
     return (
         <>
             <nav className={styles.navbar}>
-                <div className={styles.logo}>
+                <Link href="/" className={styles.logo}>
                     <Image src="/images/cyinovlogo.svg" alt="Cyinov" width={120} height={40} priority />
-                </div>
+                </Link>
 
                 <div className={styles.navLinks}>
                     {navItems.map((item) => (
