@@ -26,7 +26,7 @@ const faqData: FAQCategory[] = [
             },
             {
                 question: "What industries do you specialize in?",
-                answer: "We have expertise across multiple sectors including manufacturing, technology, healthcare, retail, financial services, real estate, and education. Our team has specialized knowledge of industry-specific regulations and requirements.",
+                answer: "We have expertise across multiple sectors including technology, healthcare, financial services, real estate, and education. Our team has specialized knowledge of industry-specific regulations and requirements.",
             },
         ],
     },
@@ -35,7 +35,7 @@ const faqData: FAQCategory[] = [
         items: [
             {
                 question: "Can you help with business registration and setup?",
-                answer: "Yes, we provide end-to-end support for business registration, including structure selection, documentation, licensing, and regulatory compliance.",
+                answer: "Yes, we provide end-to-end support for business registration, including structure selection, documentation, licensing, and regulatory compliance. We also provide litigation and court management support to startups and businesses who are or willing to litigate in different judicial forums such as Civil, Consumer, Corporate, IBC, Real Estate, etc.",
             },
             {
                 question: "Do you handle ongoing legal compliance?",
@@ -47,7 +47,11 @@ const faqData: FAQCategory[] = [
         category: "Tax Advisory",
         items: [
             {
-                question: "What tax services do you provide for international businesses?",
+                question: "What tax services do you provide for Indian startups and businesses?",
+                answer: "Our services include auditing, compliance with Indian tax regulations and law registrations, planning and structuring.",
+            },
+            {
+                question: "Do you provide any tax services for international businesses and startups?",
                 answer: "Our international tax services include cross-border transaction planning, transfer pricing, double taxation agreements, and compliance with international tax regulations.",
             },
             {

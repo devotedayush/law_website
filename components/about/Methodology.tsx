@@ -4,17 +4,17 @@ const steps = [
     {
         number: '01',
         title: 'Discovery & Diagnosis',
-        description: 'We audit your current legal, tax, and operational landscape to identify gaps and opportunities.',
+        description: 'We uncover client challenges and pinpoint root causes through structured analysis and data review.',
     },
     {
         number: '02',
         title: 'Strategy Design',
-        description: 'A tailored roadmap is built around your business goals, risk appetite, and growth timeline.',
+        description: 'A tailored roadmap is built around your business goals, litigation cycle (if any), risk appetite, and growth timeline.',
     },
     {
         number: '03',
         title: 'Implementation',
-        description: 'We execute across all disciplines — filings, registrations, contracts, and compliance frameworks.',
+        description: 'We execute across all disciplines — filings, registrations, contracts, agreements, and compliance frameworks.',
     },
     {
         number: '04',

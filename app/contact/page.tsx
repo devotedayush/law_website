@@ -7,7 +7,7 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 const contactDetails = [
     { icon: Mail, label: 'Email', value: 'info@cyinov.com', href: 'mailto:info@cyinov.com' },
     { icon: Phone, label: 'Phone', value: '+91-8800203969', href: 'tel:+918800203969' },
-    { icon: MapPin, label: 'Location', value: 'New Delhi, India' },
+    { icon: MapPin, label: 'Location', value: 'Gurugram, India' },
 ];
 
 export default function ContactPage() {
