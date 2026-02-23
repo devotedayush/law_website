@@ -15,7 +15,7 @@ const AboutHero = () => {
                     </div>
                     <div className="lg:w-5/6">
                         <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-neutral-900 mb-8 leading-tight">
-                            Where Hard Law Meets<br />Creative Strategy
+                            Transforming Business Landscapes Through Strategic Excellence
                         </h1>
                         <p className="text-lg md:text-xl text-neutral-500 max-w-2xl leading-relaxed font-light mb-10">
                             We are a multidisciplinary consulting firm that fuses legal precision with business innovation — building the frameworks that let ambitious companies scale with confidence.
