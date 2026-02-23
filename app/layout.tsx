@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
       </head>
       <body className={`${fraunces.variable} ${inter.variable}`} suppressHydrationWarning>
         {children}
+        <WhatsAppButton />
       </body>
     </html>
   );
