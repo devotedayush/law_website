@@ -44,12 +44,20 @@ const Footer = () => (
         </div>
 
         {/* Bottom Bar */}
-        <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-end border-t border-neutral-800 pt-8 gap-4">
-            <p className="text-xs text-neutral-500">©2025 Cyinov Consulting</p>
-            <div className="flex gap-6">
-                <Instagram size={20} className="text-white hover:text-[#4A6FA5] cursor-pointer transition-colors duration-200" />
-                <Facebook size={20} className="text-white hover:text-[#4A6FA5] cursor-pointer transition-colors duration-200" />
-                <Linkedin size={20} className="text-white hover:text-[#4A6FA5] cursor-pointer transition-colors duration-200" />
+        <div className="relative z-10 max-w-7xl mx-auto border-t border-neutral-800 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center md:items-end gap-4">
+                <div className="flex items-center gap-4 text-xs text-neutral-500">
+                    <p>©2025 Cyinov Consulting</p>
+                    <span className="hidden md:inline text-neutral-700">|</span>
+                    <a href="/privacy-policy" className="hover:text-neutral-300 transition-colors">Privacy Policy</a>
+                    <span className="hidden md:inline text-neutral-700">|</span>
+                    <a href="/terms-of-service" className="hover:text-neutral-300 transition-colors">Terms of Service</a>
+                </div>
+                <div className="flex gap-6">
+                    <Instagram size={20} className="text-white hover:text-[#4A6FA5] cursor-pointer transition-colors duration-200" />
+                    <Facebook size={20} className="text-white hover:text-[#4A6FA5] cursor-pointer transition-colors duration-200" />
+                    <Linkedin size={20} className="text-white hover:text-[#4A6FA5] cursor-pointer transition-colors duration-200" />
+                </div>
             </div>
         </div>
     </footer>
