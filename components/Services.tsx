@@ -78,9 +78,9 @@ const Services = () => {
                                 The 4-Pillar <br />
                                 Shield
                             </h2>
-                            <button className="bg-[#4A6FA5] text-white px-6 py-3 rounded text-sm font-medium hover:bg-[#3B5D8A] transition-colors duration-200">
+                            <a href="https://wa.me/918800203969" target="_blank" rel="noopener noreferrer" className="bg-[#4A6FA5] text-white px-6 py-3 rounded text-sm font-medium hover:bg-[#3B5D8A] transition-colors duration-200">
                                 Schedule Meet
-                            </button>
+                            </a>
                         </div>
                         <div className="flex overflow-x-auto pb-8 -mx-6 px-6 md:mx-0 md:px-0 gap-6 scrollbar-hide snap-x">
                             {services.map((service, index) => (

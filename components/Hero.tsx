@@ -12,9 +12,9 @@ const Hero = () => {
                 Empowering businesses with innovative solutions and strategic excellence
             </p>
 
-            <button className={styles.ctaButton}>
+            <a href="https://wa.me/918800203969" target="_blank" rel="noopener noreferrer" className={styles.ctaButton}>
                 Schedule a Consultation
-            </button>
+            </a>
         </section>
     );
 };

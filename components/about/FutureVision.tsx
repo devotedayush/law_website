@@ -73,7 +73,9 @@ const FutureVision = () => {
                         Let&apos;s build a strategy that protects what you&apos;ve built and accelerates where you&apos;re headed.
                     </p>
                     <a
-                        href="/contact"
+                        href="https://wa.me/918800203969"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-block bg-white text-neutral-900 px-8 py-4 rounded text-sm font-medium hover:bg-[#C5D5E8] transition-colors duration-200"
                     >
                         Talk to a Consultant

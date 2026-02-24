@@ -11,7 +11,9 @@ const ServicesCTA = () => {
                     Tell us about your business and we&apos;ll recommend the right combination of services to keep you compliant, competitive, and growing.
                 </p>
                 <a
-                    href="/contact"
+                    href="https://wa.me/918800203969"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-white text-neutral-900 px-8 py-4 rounded text-sm font-medium hover:bg-[#C5D5E8] transition-colors duration-200"
                 >
                     Talk to a Consultant

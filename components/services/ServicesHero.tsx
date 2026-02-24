@@ -21,7 +21,9 @@ const ServicesHero = () => {
                             From legal compliance and tax advisory to market research and human capital — we deliver integrated, technology-driven solutions that help you scale with confidence.
                         </p>
                         <a
-                            href="#contact"
+                            href="https://wa.me/918800203969"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="inline-block bg-[#4A6FA5] text-white px-8 py-4 rounded text-sm font-medium hover:bg-[#3B5D8A] transition-colors duration-200"
                         >
                             Schedule a Consultation

@@ -33,9 +33,9 @@ const Navbar = () => {
                     ))}
                 </div>
 
-                <button className={styles.signInButton}>
+                <a href="https://wa.me/918800203969" target="_blank" rel="noopener noreferrer" className={styles.signInButton}>
                     Get In Touch
-                </button>
+                </a>
 
                 {/* Hamburger — mobile only */}
                 <button
@@ -62,13 +62,15 @@ const Navbar = () => {
                             {item.label}
                         </Link>
                     ))}
-                    <Link
-                        href="/contact"
+                    <a
+                        href="https://wa.me/918800203969"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className={styles.mobileCta}
                         onClick={() => setMobileOpen(false)}
                     >
                         Get In Touch
-                    </Link>
+                    </a>
                 </div>
             </div>
         </>

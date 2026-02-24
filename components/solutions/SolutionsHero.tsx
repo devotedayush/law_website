@@ -21,7 +21,9 @@ const SolutionsHero = () => {
                             Ten specialized practice areas — each designed to solve a specific business challenge with legal precision and strategic depth. Explore the full Cyinov Deck below.
                         </p>
                         <a
-                            href="/contact"
+                            href="https://wa.me/918800203969"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="inline-block bg-[#4A6FA5] text-white px-8 py-4 rounded text-sm font-medium hover:bg-[#3B5D8A] transition-colors duration-200"
                         >
                             Book a Consultation

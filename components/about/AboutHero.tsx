@@ -21,7 +21,9 @@ const AboutHero = () => {
                             We are a multidisciplinary consulting firm that fuses legal precision with business innovation — building the frameworks that let ambitious companies scale with confidence.
                         </p>
                         <a
-                            href="#contact"
+                            href="https://wa.me/918800203969"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="inline-block bg-[#4A6FA5] text-white px-8 py-4 rounded text-sm font-medium hover:bg-[#3B5D8A] transition-colors duration-200"
                         >
                             Talk to a Consultant

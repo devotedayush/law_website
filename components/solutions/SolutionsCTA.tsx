@@ -11,7 +11,9 @@ const SolutionsCTA = () => {
                     Every business is unique. Tell us about your challenges and we&apos;ll craft a tailored combination of our practice areas to address your specific needs.
                 </p>
                 <a
-                    href="/contact"
+                    href="https://wa.me/918800203969"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-white text-neutral-900 px-8 py-4 rounded text-sm font-medium hover:bg-[#C5D5E8] transition-colors duration-200"
                 >
                     Talk to a Consultant
