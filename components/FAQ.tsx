@@ -35,7 +35,7 @@ const faqData: FAQCategory[] = [
         items: [
             {
                 question: "Can you help with business registration and setup?",
-                answer: "Yes, we provide end-to-end support for business registration, including structure selection, documentation, licensing, and regulatory compliance. We also provide litigation and court management support to startups and businesses who are or willing to litigate in different judicial forums such as Civil, Consumer, Corporate, IBC, Real Estate, etc.",
+                answer: "Yes, we provide end-to-end support for business registration, including structure selection, documentation, licensing, and regulatory compliance. We also provide litigation and court management support to startups and businesses who are currently engaged in ongoing litigation or are willing to litigate in different judicial forums arising out of disputes such as Civil, Consumer, Corporate, Real Estate etc.",
             },
             {
                 question: "Do you handle ongoing legal compliance?",
