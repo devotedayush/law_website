@@ -54,9 +54,15 @@ const Footer = () => (
                     <a href="/terms-of-service" className="hover:text-neutral-300 transition-colors">Terms of Service</a>
                 </div>
                 <div className="flex gap-6">
-                    <Instagram size={20} className="text-white hover:text-[#4A6FA5] cursor-pointer transition-colors duration-200" />
-                    <Facebook size={20} className="text-white hover:text-[#4A6FA5] cursor-pointer transition-colors duration-200" />
-                    <Linkedin size={20} className="text-white hover:text-[#4A6FA5] cursor-pointer transition-colors duration-200" />
+                    <a href="https://www.instagram.com/cyinovconsulting" target="_blank" rel="noopener noreferrer">
+                        <Instagram size={20} className="text-white hover:text-[#4A6FA5] cursor-pointer transition-colors duration-200" />
+                    </a>
+                    <a href="https://www.facebook.com/people/Cyinov-Consulting/61574960935041/" target="_blank" rel="noopener noreferrer">
+                        <Facebook size={20} className="text-white hover:text-[#4A6FA5] cursor-pointer transition-colors duration-200" />
+                    </a>
+                    <a href="https://www.linkedin.com/company/cyinovconsulting/" target="_blank" rel="noopener noreferrer">
+                        <Linkedin size={20} className="text-white hover:text-[#4A6FA5] cursor-pointer transition-colors duration-200" />
+                    </a>
                 </div>
             </div>
         </div>
