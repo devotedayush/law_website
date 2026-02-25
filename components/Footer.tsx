@@ -7,7 +7,7 @@ const Footer = () => (
         <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 mb-32">
             {/* Left Column */}
             <div className="max-w-md">
-                <img src="/images/cyinovlogo.svg" alt="Cyinov" className="h-24 w-24 mb-6 brightness-0 invert" />
+                <img src="/images/cyinov-logo.svg" alt="Cyinov" className="h-44 w-auto mb-6 brightness-0 invert" />
                 <p className="text-neutral-400 text-sm leading-relaxed max-w-xs">
                     At <strong className="text-white">Cyinov Consulting</strong>, Empowering businesses with innovative solutions and strategic excellence.
                 </p>

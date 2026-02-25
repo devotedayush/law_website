@@ -22,7 +22,7 @@ const Navbar = () => {
             <nav className={styles.navbar}>
                 <Link href="/" className={styles.logo}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="/images/cyinovlogo_cropped.jpeg" alt="Cyinov" style={{ height: '55px', width: 'auto', objectFit: 'contain' }} />
+                    <img src="/images/cyinov-logo.svg" alt="Cyinov" style={{ height: '130px', width: 'auto', display: 'block' }} />
                 </Link>
 
                 <div className={styles.navLinks}>
