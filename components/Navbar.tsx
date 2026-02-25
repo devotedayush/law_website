@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import styles from './Navbar.module.css';
 
 const navItems = [
@@ -22,7 +21,8 @@ const Navbar = () => {
         <>
             <nav className={styles.navbar}>
                 <Link href="/" className={styles.logo}>
-                    <Image src="/images/cyinovlogo.svg" alt="Cyinov" width={120} height={40} priority />
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="/images/cyinovlogo_cropped.jpeg" alt="Cyinov" style={{ height: '55px', width: 'auto', objectFit: 'contain' }} />
                 </Link>
 
                 <div className={styles.navLinks}>
