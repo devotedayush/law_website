@@ -1,4 +1,7 @@
 import { NextResponse } from 'next/server';
+import { Resend } from 'resend';
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
     try {
@@ -13,33 +16,21 @@ export async function POST(request: Request) {
             );
         }
 
-        // Auto-tag: build the lead label
         const leadTag = `Lead from ${service}`;
 
-        // Log the lead (replace with your email service integration)
-        // e.g., Resend, Nodemailer, SendGrid, etc.
-        console.log('──────────────────────────────────');
-        console.log(`📩 NEW LEAD: ${leadTag}`);
-        console.log(`   Name:    ${name}`);
-        console.log(`   Email:   ${email}`);
-        console.log(`   Phone:   ${phone || '—'}`);
-        console.log(`   Service: ${service}`);
-        console.log(`   Message: ${message}`);
-        console.log('──────────────────────────────────');
-
-        // ── Email integration placeholder ──
-        // To send to info@cyinov.com, wire up your email service here:
-        //
-        // await resend.emails.send({
-        //     from: 'leads@cyinov.com',
-        //     to: 'info@cyinov.com',
-        //     subject: `${leadTag} — ${name}`,
-        //     html: `<p><strong>${leadTag}</strong></p>
-        //            <p>Name: ${name}</p>
-        //            <p>Email: ${email}</p>
-        //            <p>Phone: ${phone || '—'}</p>
-        //            <p>Message: ${message}</p>`,
-        // });
+        await resend.emails.send({
+            from: 'onboarding@resend.dev',
+            to: 'cyinovconsulting@gmail.com',
+            subject: `${leadTag} — ${name}`,
+            html: `
+                <h2>${leadTag}</h2>
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Phone:</strong> ${phone || '—'}</p>
+                <p><strong>Service:</strong> ${service}</p>
+                <p><strong>Message:</strong> ${message}</p>
+            `,
+        });
 
         return NextResponse.json({ success: true, tag: leadTag });
     } catch {
