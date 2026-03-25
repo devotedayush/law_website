@@ -1,7 +1,7 @@
 import React from 'react';
 
 const AttorneyCard = ({ name, role, image }: { name: string; role: string; image: string }) => (
-    <div className="group relative bg-white rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1">
+    <div className="group relative h-full bg-white rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1">
         <div className="aspect-[3/4] overflow-hidden bg-neutral-200">
             <img
                 src={image}
@@ -10,7 +10,7 @@ const AttorneyCard = ({ name, role, image }: { name: string; role: string; image
                 loading="lazy"
             />
         </div>
-        <div className="p-5">
+        <div className="flex min-h-[5.5rem] flex-col justify-start p-5">
             <h3 className="text-base font-semibold text-neutral-900 leading-tight mb-1">
                 {name}
             </h3>
@@ -48,11 +48,21 @@ const Attorneys = () => {
             role: "Head - Market & Product Research",
             image: "/images/rajeev_kaushik.png",
         },
+        {
+            name: "Navdeep Singh",
+            role: "Litigation Advisor & Counsel - Civil Law, Commercial Law, IBC, Company Law, Arbitration, Consumer Protection",
+            image: "/images/Navdeep Singh.png",
+        },
+        {
+            name: "Richa Pachori",
+            role: "Counsel - Civil, Criminal & Corporate including Commercial Contracts",
+            image: "/images/Richa Pachori.png",
+        },
     ];
 
-    // First row: 3 cards (Founder, Co-Founder, and one head)
+    // First row: 3 cards
     const topRow = attorneys.slice(0, 3);
-    // Second row: remaining 2, centered
+    // Second row: remaining 4 cards
     const bottomRow = attorneys.slice(3);
 
     return (
@@ -83,8 +93,8 @@ const Attorneys = () => {
                     ))}
                 </div>
 
-                {/* Bottom Row — 2 cards, centered */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[43rem] mx-auto">
+                {/* Bottom Row — 4 cards */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 max-w-6xl mx-auto">
                     {bottomRow.map((attorney, index) => (
                         <AttorneyCard
                             key={index + 3}
