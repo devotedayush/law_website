@@ -18,6 +18,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Cyinov Consulting",
   description: "Simplified Solutions, Amplified Success. Legal Compliance, Tax Advisory, Market Research & Human Capital consulting.",
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({
