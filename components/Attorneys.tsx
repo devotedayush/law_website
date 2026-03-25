@@ -55,7 +55,7 @@ const Attorneys = () => {
         },
         {
             name: "Richa Pachori",
-            role: "Counsel - Civil, Criminal & Corporate including Commercial Contracts",
+            role: "Counsel - Civil & Corporate including Commercial Contracts",
             image: "/images/Richa Pachori.png",
         },
     ];
