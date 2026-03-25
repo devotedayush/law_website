@@ -34,6 +34,11 @@ const Attorneys = () => {
             image: "/images/Tapsi Anand.jpeg",
         },
         {
+            name: "Samrat Anand",
+            role: "Co-Founder & Head - Legal Advisory and Management",
+            image: "/images/samrat.png",
+        },
+        {
             name: "Ankur",
             role: "Head - Human Capital Management",
             image: "/images/ankur_kaushik.png",
@@ -60,10 +65,9 @@ const Attorneys = () => {
         },
     ];
 
-    // First row: 3 cards
-    const topRow = attorneys.slice(0, 3);
-    // Second row: remaining 4 cards
-    const bottomRow = attorneys.slice(3);
+    // Two balanced rows of 4 cards each
+    const topRow = attorneys.slice(0, 4);
+    const bottomRow = attorneys.slice(4);
 
     return (
         <section className="bg-[#F3F2ED] p-6 md:p-12 lg:p-20 flex items-center justify-center">
@@ -81,8 +85,8 @@ const Attorneys = () => {
                     </h2>
                 </div>
 
-                {/* Top Row — 3 cards */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6 max-w-5xl mx-auto">
+                {/* Top Row — 4 cards */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mb-6 max-w-6xl mx-auto">
                     {topRow.map((attorney, index) => (
                         <AttorneyCard
                             key={index}
@@ -97,7 +101,7 @@ const Attorneys = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 max-w-6xl mx-auto">
                     {bottomRow.map((attorney, index) => (
                         <AttorneyCard
-                            key={index + 3}
+                            key={index + 4}
                             name={attorney.name}
                             role={attorney.role}
                             image={attorney.image}
